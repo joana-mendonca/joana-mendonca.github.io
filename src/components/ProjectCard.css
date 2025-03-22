@@ -1,0 +1,76 @@
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color: var(--main-color);
+    height: auto;
+    width: 1fr;
+    position: relative;
+    max-width: 800px;
+    padding: 40px 48px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 1px dashed var(--borders);
+    border-right: 1px dashed var(--borders);
+}
+
+.project-title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.project-body {
+    display: flex;
+    gap: 54px;
+
+}
+
+.project-tags {
+    max-width: 200px;
+}
+
+.project-tag {
+    display: inline-block;
+    margin: 4px 4px 4px 0px;
+    padding: 10px 12px;
+    background-color: var(--on-hover);
+    border-radius: 60px;
+    opacity: 1;
+}
+
+.project-tags>p {
+    line-height: 17px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--primary-text-color);
+    font-family: var(--font-primary);
+}
+
+.project-tags>button {
+    font-family: var(--font-secondary);
+    font-size: 13px;
+    margin-top: 16px;
+    height: 42px;
+    width: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    background-color: rgb(26, 26, 26);
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: rgba(255, 255, 255, 0.243) 0px 0.602187px 1.08394px -0.916667px inset, rgba(255, 255, 255, 0.235) 0px 2.28853px 4.11936px -1.83333px inset, rgba(255, 255, 255, 0.204) 0px 10px 18px -2.75px inset, rgba(255, 255, 255, 0.03) 0px 0px 20px 1px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.projects-footer {
+    background-color: var(--background-color);
+    border-top: 1px solid var(--borders);
+    border-bottom: 1px solid var(--borders);
+    border-left: 1px dashed var(--borders);
+    border-right: 1px dashed var(--borders);
+    height: 40px;
+    width: 896px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}

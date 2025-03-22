@@ -1,0 +1,8 @@
+.section-body > h2 {
+    padding-bottom: 32px;
+}
+
+.section-body > p {
+    color: var(--primary-text-color);
+    padding-bottom: 48px;
+}

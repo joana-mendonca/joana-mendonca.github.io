@@ -1,0 +1,277 @@
+:root {
+  --base-color: rgba(249, 250, 251, 0.1);
+  --main-color: white;
+  --font-base-color: #090909;
+  --primary-text-color: #313131;
+  --secondary-text-color: #6e6e73;
+  --on-hover: #f5f6f7;
+  --borders: rgba(0, 0, 0, 0.08);
+
+  --font-primary: "Manrope", serif;
+  --font-secondary: "system-ui", serif;
+  --font-signature: "Reenie Beanie", serif;
+}
+
+.dark {
+  --base-color: #141414;
+  --main-color: #141414;
+  --font-base-color: rgba(255, 255, 255, 0.6);
+  --primary-text-color: white;
+  --secondary-text-color: rgba(255, 255, 255, 0.6);
+  --on-hover: #1a1a1a;
+  --borders: rgba(255, 255, 255, 0.08);
+}
+
+
+/*************************************************************************************************
+*  CSS reset 
+*************************************************************************************************/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+input {
+  border: 1px solid #b0b0b0;
+  padding: 3px 5px 4px;
+  color: #979797;
+  width: 190px;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+/*************************************************************************************************
+*  Desktop
+*************************************************************************************************/
+body {
+  background-color: var(--base-color);
+  /*transition: background-color 0.3s, color 0.3s;*/
+}
+
+.bg-img {
+  background-color: var(--base-color);
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-repeat: repeat; /* Default value, but good to include for clarity */
+  background-size: auto; /* Keeps the original pattern size */
+  background-position: center;
+  opacity: 0.4; /* Adjust opacity here */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.main {
+  display: flex;
+  height: 100vh; /* Ensures full height */
+}
+
+aside {
+  background-color: var(--main-color);
+  width: 259px;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1 {
+  font-family: var(--font-primary);
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 600;
+  color: var(--primary-text-color);
+  max-width: 700px;
+}
+
+h2 {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+  max-width: 700px;
+
+}
+
+h3 {
+  font-size: 22px;
+  font-family: var(--font-signature);
+  font-weight: 600;
+  line-height: 1.1em;
+  color: var(--primary-text-color);
+  font-style: normal;
+}
+
+h4 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--secondary-text-color);
+  letter-spacing: -0.02em;
+}
+
+h5 {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--font-base-color);
+  letter-spacing: -0.02em;
+}
+
+h6 {
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500;
+  color: var(--primary-text-color);
+}
+
+p {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  color: var(--font-base-color);
+  font-weight: 500;
+}
+
+.dark .icon {
+  filter: invert(1);
+}
+
+/* Common Sections Header Code */
+.section-title {
+  background-color: var(--main-color);
+  border-top: 1px solid var(--borders);
+  border-bottom: 1px solid var(--borders);
+  height: 70px;
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.section-title>h1 {
+  font-family: var(--font-primary);
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.section-body {
+  background-color: var(--main-color);
+  width: 1fr;
+  position: relative;
+  height: auto;
+  max-width: 800px;
+  padding: 80px 48px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 1px dashed var(--borders);
+  border-right: 1px dashed var(--borders);
+}
+
+.bar {
+  background-color: var(--primary-text-color);
+  width: 24px;
+  height: 2px;
+}
+

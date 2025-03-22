@@ -1,0 +1,10 @@
+footer {
+    background-color: var(--main-color);
+    padding: 16px 0px;
+    border-top: 1px solid var(--borders);
+    text-align: center;
+}
+
+footer>p {
+    font-size: 12px;
+}

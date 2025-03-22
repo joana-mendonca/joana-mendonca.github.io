@@ -1,0 +1,16 @@
+.tool-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 345px;
+    height: 47.5px;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: var(--on-hover);
+}
+
+.tool-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
