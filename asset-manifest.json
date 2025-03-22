@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.08ebc3c7.css",
+    "main.js": "/static/js/main.302205f3.js",
+    "static/media/MUDE-thumbnail.png": "/static/media/MUDE-thumbnail.327f9ad222c6ee7bb14e.png",
+    "static/media/the-keeper-app-mockup.png": "/static/media/the-keeper-app-mockup.91c75596dfe0a77dc552.png",
+    "static/media/Moey-thumbnail.png": "/static/media/Moey-thumbnail.31d99b1f30902b0e3114.png",
+    "static/media/EDIT-thumbnail.png": "/static/media/EDIT-thumbnail.1b940580c4e696e798b7.png",
+    "static/media/javascript-logo.png": "/static/media/javascript-logo.266bd9fb2663dcc057b4.png",
+    "static/media/java-logo.svg": "/static/media/java-logo.a351f739f47fda7a637b86ffa530d56a.svg",
+    "static/media/react-logo.svg": "/static/media/react-logo.e68b35f4774979ae220b1d5d7b345b00.svg",
+    "static/media/nodejs-logo.svg": "/static/media/nodejs-logo.4f3c72c16844c2ae308bed34e6b242f9.svg",
+    "index.html": "/index.html",
+    "static/media/github.svg": "/static/media/github.7f68317ff23c9f63c1de3eb3ff9acd26.svg",
+    "static/media/sun.svg": "/static/media/sun.c5b7af8759199d43d02fe99774b19d12.svg",
+    "static/media/stack.svg": "/static/media/stack.c4e97bce2b3cd76c197c0feda67befa9.svg",
+    "static/media/css-logo.svg": "/static/media/css-logo.4e47c3122b8d2476a02f97dcfcb28640.svg",
+    "static/media/moon.svg": "/static/media/moon.da139ea8df7775645278d32339c2c5ca.svg",
+    "static/media/behance.svg": "/static/media/behance.83cca6d9a5fb68eb71550e6254a5d812.svg",
+    "static/media/html-logo.svg": "/static/media/html-logo.f318c8b1d5945fa9adc827ae94849cb1.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.502c2f41fac00a173a852096964d410a.svg",
+    "static/media/user.svg": "/static/media/user.21b436c5633ca8d23a7697c8dff99e23.svg",
+    "static/media/cards-three.svg": "/static/media/cards-three.7544490fef624c671df5e724686a54c1.svg",
+    "static/media/envelope-simple.svg": "/static/media/envelope-simple.f55700297c1161bdef29f4243f729817.svg",
+    "static/media/arrow-up-right.svg": "/static/media/arrow-up-right.ab50831a67d08ce558b9.svg",
+    "main.08ebc3c7.css.map": "/static/css/main.08ebc3c7.css.map",
+    "main.302205f3.js.map": "/static/js/main.302205f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08ebc3c7.css",
+    "static/js/main.302205f3.js"
+  ]
+}
