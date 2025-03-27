@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.08ebc3c7.css",
-    "main.js": "/static/js/main.302205f3.js",
+    "main.js": "/static/js/main.c60409b9.js",
     "static/media/MUDE-thumbnail.png": "/static/media/MUDE-thumbnail.327f9ad222c6ee7bb14e.png",
     "static/media/the-keeper-app-mockup.png": "/static/media/the-keeper-app-mockup.91c75596dfe0a77dc552.png",
     "static/media/Moey-thumbnail.png": "/static/media/Moey-thumbnail.31d99b1f30902b0e3114.png",
@@ -24,10 +24,10 @@
     "static/media/envelope-simple.svg": "/static/media/envelope-simple.f55700297c1161bdef29f4243f729817.svg",
     "static/media/arrow-up-right.svg": "/static/media/arrow-up-right.ab50831a67d08ce558b9.svg",
     "main.08ebc3c7.css.map": "/static/css/main.08ebc3c7.css.map",
-    "main.302205f3.js.map": "/static/js/main.302205f3.js.map"
+    "main.c60409b9.js.map": "/static/js/main.c60409b9.js.map"
   },
   "entrypoints": [
     "static/css/main.08ebc3c7.css",
-    "static/js/main.302205f3.js"
+    "static/js/main.c60409b9.js"
   ]
 }
