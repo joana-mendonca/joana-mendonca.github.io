@@ -45,5 +45,11 @@ The site will be available at http://localhost:3000
 
 <br>
 
+## 💭 Final Thoughts
+
+- Q: Was it really necessary to migrate my old website to a React app for a simple static page?<br>A: Absolutely not! But I learned a lot doing it and it was fun :)
+
+<br>
+
 ---
 Made with ❤️ using React
