@@ -1,3 +1,25 @@
+/* Center the submit button in the contact form */
+.contact-submit-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/* Use the same style as .project-tags>button for the contact form submit button */
+.contact-submit-btn {
+    font-family: var(--font-secondary);
+    font-size: 13px;
+    margin-top: 20px;
+    height: 42px;
+    width: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    background-color: rgb(26, 26, 26);
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: rgba(255, 255, 255, 0.243) 0px 0.602187px 1.08394px -0.916667px inset, rgba(255, 255, 255, 0.235) 0px 2.28853px 4.11936px -1.83333px inset, rgba(255, 255, 255, 0.204) 0px 10px 18px -2.75px inset, rgba(255, 255, 255, 0.03) 0px 0px 20px 1px;
+    opacity: 1;
+    cursor: pointer;
+}
 .contact-body {
     width: 758px;
     min-height: 450px;
@@ -10,6 +32,10 @@
 
 #contact-section>.section-body {
     padding-top: 60px;
+}
+
+.contact-input {
+    margin-bottom: 16px;
 }
 
 .contact-input>h4 {

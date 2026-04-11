@@ -12,7 +12,7 @@ function ProjectsSection() {
             </div>
 
             {projects.map((project, index) => (
-                <div>
+                <div key={project.id || index}>
                     <ProjectCard key={project.id} {...project} />
                     <div
                         className="projects-footer"

@@ -31,7 +31,7 @@ function Sidebar() {
                     <img src={joana} alt="Joana" />
                     <div className="title">
                         <h3>Joana Mendonça</h3>
-                        <h4>Software Engineer</h4>
+                        <h4>Product Designer</h4>
                     </div>
                 </a>
                 <div className="sections">
