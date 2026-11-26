@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eeeef0">
+    <meta name="description" content="Joana M. — UI/UX designer shaping thoughtful websites, dashboards and mobile apps.">
+    <title>Joana M. · UI/UX Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gloock&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="editor-bar">
+      <div class="bar-left">
+        <a class="brand-mark" href="#hero" aria-label="Joana M, home">J</a>
+        <button class="icon-button panel-toggle" type="button" aria-label="Hide layers panel" title="Toggle layers panel" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/></svg>
+        </button>
+        <div class="tools" role="toolbar" aria-label="Design tools">
+          <button class="tool is-active" type="button" aria-label="Move tool" title="Move tool"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 3 15 9-7 1-3 7z"/></svg></button>
+          <button class="tool" type="button" aria-label="Frame tool" title="Frame tool"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8V4h4M16 4h4v4M20 16v4h-4M8 20H4v-4M8 4v16M16 4v16"/></svg></button>
+          <button class="tool" type="button" aria-label="Shape tool" title="Shape tool"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/></svg></button>
+          <button class="tool" type="button" aria-label="Text tool" title="Text tool"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6V4h16v2M12 4v16M8 20h8"/></svg></button>
+          <button class="tool" type="button" aria-label="Comment tool" title="Comment tool"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a7.5 7.5 0 0 1-8 7.5 8.6 8.6 0 0 1-3.5-.8L4 20l1.2-3.4A7.2 7.2 0 0 1 4 12c0-4.1 3.6-7.5 8-7.5s8 2.9 8 7z"/></svg></button>
+        </div>
+      </div>
+      <p class="file-title"><strong>Joana M.</strong><span> / Portfolio</span></p>
+      <div class="bar-right">
+        <span class="collaborator" aria-label="You are viewing this file">J</span>
+        <button class="icon-button theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button>
+        <a class="bar-button outline-button" href="assets/joana-mendonca-cv.pdf" target="_blank" rel="noopener">Resume</a>
+        <a class="bar-button" href="#contact">Contact</a>
+        <span class="zoom-level">100%</span>
+      </div>
+    </header>
+
+    <aside class="layers-panel" aria-label="Portfolio layers">
+      <div class="panel-tabs"><span class="selected">Layers</span><span>Assets</span><button class="icon-button panel-toggle" type="button" aria-label="Hide layers panel" title="Hide layers panel" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/></svg></button></div>
+      <p class="panel-heading">Pages</p>
+      <a class="page-item is-selected" href="#hero"><span class="page-check">✓</span>Portfolio</a>
+      <a class="page-item" href="work/moey.html">Moey!</a>
+      <!-- TODO
+      <a class="page-item" href="work/fieldnote.html">Fieldnote</a>
+      <a class="page-item" href="work/northstar.html">Northstar</a>
+      <a class="page-item" href="work/luma.html">Luma</a>
+      <a class="page-item" href="work/common-ground.html">Common Ground</a>
+      -->
+      <p class="panel-heading layer-heading">Layers</p>
+      <nav class="layer-list" aria-label="Page sections">
+        <a href="#hero" data-section="hero"><span class="layer-icon">⌂</span>Home</a>
+        <a href="#work" data-section="work"><span class="layer-icon">▱</span>Work</a>
+        <a class="sub-layer" href="#project-moey">Moey!</a>
+        <!-- TODO
+        <a class="sub-layer" href="#project-fieldnote">Fieldnote</a>
+        <a class="sub-layer" href="#project-northstar">Northstar</a>
+        <a class="sub-layer" href="#project-luma">Luma</a>
+        <a class="sub-layer" href="#project-common">Common Ground</a>
+        -->
+        <a href="#about" data-section="about"><span class="layer-icon">♙</span>About</a>
+        <a href="#experience" data-section="experience"><span class="layer-icon">▣</span>Experience</a>
+        <!-- TODO
+        <a href="#youtube" data-section="youtube"><span class="layer-icon">▷</span>YouTube</a>
+        -->
+        <a href="#contact" data-section="contact"><span class="layer-icon">✉</span>Contact</a>
+      </nav>
+      <div class="panel-foot"><span class="panel-foot-dot"></span> All changes saved</div>
+    </aside>
+    <button class="show-layers" type="button" aria-label="Show layers panel">☷ <span>Layers</span></button>
+
+    <main class="canvas">
+      <section class="frame hero-frame" id="hero" aria-label="Introduction">
+        <span class="frame-label">▱ &nbsp; Home · 1440</span>
+        <div class="hero-content">
+          <p class="hero-meta"><span>UX/UI Designer for digital products</span><span class="availability"><i></i>Open to opportunities · Remote/Hybrid, Portugal</span></p>
+          <h1 class="hero-name"><span>Joana</span> <span>M<span class="brand-dot">.</span></span></h1>
+          <div class="hero-row">
+            <div class="hero-copy">
+              <p class="hero-lede">I design websites, dashboards and mobile apps that <strong>feel effortless</strong> to use and easy to build.</p>
+              <p class="hero-proof">Working collaboratively with teams to make everyday digital experiences a little better.</p>
+            </div>
+            <div class="hero-actions"><a class="button button-brand" href="#work">See the work <span>↘</span></a><a class="button button-line" href="#contact">Start a project <span>↗</span></a></div>
+          </div>
+        </div>
+        <a class="canvas-scroll" href="#work">SCROLL TO EXPLORE <span>↓</span></a>
+      </section>
+
+      <section class="frame work-frame" id="work" aria-label="Selected work">
+        <span class="frame-label">▱ &nbsp; Work · 5 case studies</span>
+        <div class="frame-heading"><div><p class="label">SELECTED PROJECTS</p><h2>Selected work<span class="brand-dot">.</span></h2></div><p class="frame-hint">A few ideas, made real.<br>Thoughtful design for everyday life.</p></div>
+        <div class="project-stack">
+          <a class="project-card project-moey" id="project-moey" href="work/moey.html" aria-label="View Moey! case study">
+            <span class="project-label"><b>Digital banking</b><span>iOS · Mobile</span></span>
+            <span class="project-art">
+              <span class="project-copy"><small>01 / 05</small><strong>Moey!</strong><span>Banking made simpler · UX/UI</span></span>
+              <span class="phone-mock moey-phone"><img src="assets/moey-home.png" alt="Moey! banking app home screen showing the balance, shortcuts, recent activity and bottom navigation"></span>
+            </span>
+            <span class="card-open">OPEN CASE STUDY ↗</span>
+          </a>
+
+          <!--
+          <a class="project-card project-fieldnote" id="project-fieldnote" href="work/fieldnote.html" aria-label="View Fieldnote store case study">
+            <span class="project-label"><b>E-commerce</b><span>Web · Responsive</span></span>
+            <span class="project-art">
+              <span class="project-copy"><small>02 / 05</small><strong>Fieldnote</strong><span>A slower kind of shopping</span></span>
+              <span class="browser-mock"><span class="browser-top"><i></i><i></i><i></i><b>fieldnote.studio</b></span><span class="shop-head"><b>fieldnote<span>®</span></b><small>SHOP&nbsp;&nbsp; OUR STORY&nbsp;&nbsp; JOURNAL</small></span><span class="shop-hero"><small>GROW AT YOUR OWN PACE</small><b>A little more<br>room to grow.</b><i>Find your new favourite green thing.</i><em>SHOP THE COLLECTION →</em></span><span class="shop-plant"><i></i><i></i><i></i><i></i><b></b></span><span class="shop-bottom">A GOOD HOME FOR GOOD PLANTS</span></span>
+            </span>
+            <span class="card-open">OPEN CASE STUDY ↗</span>
+          </a>
+
+          <a class="project-card project-northstar" id="project-northstar" href="work/northstar.html" aria-label="View Northstar dashboard case study">
+            <span class="project-label"><b>B2B SaaS</b><span>Desktop · 1440</span></span>
+            <span class="project-art">
+              <span class="project-copy"><small>03 / 05</small><strong>Northstar</strong><span>More clarity for growing teams</span></span>
+              <span class="dashboard-mock"><span class="dash-side"><b>northstar<span>✳</span></b><small>WORKSPACE</small><i>◫ &nbsp; Overview</i><i>▤ &nbsp; Projects</i><i>◷ &nbsp; Activity</i><small>YOUR TEAM</small><i>⚙ &nbsp; Settings</i></span><span class="dash-main"><span class="dash-top">Monday, September 16, 2026 <b>JD</b></span><b class="dash-title">Good morning, Joana <span>✳</span></b><small>Here's what's happening with your projects.</small><span class="dash-stats"><i><small>ACTIVE PROJECTS</small><b>12 <em>↗ 2 this week</em></b></i><i><small>TEAM CAPACITY</small><b>84% <em>On track</em></b></i><i><small>UPCOMING MILESTONE</small><b>Sep 24 <em>Website launch</em></b></i></span><span class="dash-chart"><b>Project activity</b><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
+            </span>
+            <span class="card-open">OPEN CASE STUDY ↗</span>
+          </a>
+
+          <a class="project-card project-luma" id="project-luma" href="work/luma.html" aria-label="View Luma learning app case study">
+            <span class="project-label"><b>Education</b><span>Mobile · 390</span></span>
+            <span class="project-art">
+              <span class="project-copy"><small>04 / 05</small><strong>Luma</strong><span>Learning, lit up</span></span>
+              <span class="phone-mock luma-phone"><i class="phone-status">9:41 <span>●●●</span></i><span class="luma-sun">☼</span><small>YOUR DAILY SPARK</small><b class="luma-title">What if you<br>learned one<br>new thing?</b><span class="luma-card"><i>✳</i><b>Design that<br>makes sense</b><small>6 min lesson</small><em>START LEARNING →</em></span><span class="phone-nav">⌂　◉　◷　○</span></span>
+            </span>
+            <span class="card-open">OPEN CASE STUDY ↗</span>
+          </a>
+
+          <a class="project-card project-common" id="project-common" href="work/common-ground.html" aria-label="View Common Ground branding case study">
+            <span class="project-label"><b>Community</b><span>Brand · Digital</span></span>
+            <span class="project-art">
+              <span class="project-copy"><small>05 / 05</small><strong>Common<br>Ground</strong><span>A place to belong</span></span>
+              <span class="common-art"><span class="common-wordmark">common<br>ground<span>.</span></span><span class="common-circle">MEET<br>HERE<br>✳</span><span class="common-footer">GOOD PEOPLE. SHARED PLACES. &nbsp; EST. 2025</span></span>
+            </span>
+            <span class="card-open">OPEN CASE STUDY ↗</span>
+          </a>
+         -->
+        </div>
+        <p class="stack-note"><span>SCROLL TO MOVE THROUGH THE PROJECTS</span><span>01 — 05</span></p>
+      </section>
+
+      <section class="frame about-frame" id="about" aria-label="About Joana">
+        <span class="frame-label">▱ &nbsp; About</span>
+        <div class="about-layout">
+          <!-- TODO
+          <div class="about-visual" aria-label="Abstract portrait illustration">
+            <span class="portrait-sun">✳</span><span class="portrait-orbit"></span><span class="portrait-shape"></span><span class="portrait-neck"></span><span class="portrait-head"><i></i></span><span class="portrait-caption">A HUMAN, FIRST.</span>
+          </div>
+          -->
+          <div class="about-intro">
+            <p class="label">A LITTLE ABOUT ME</p>
+            <h2>I make complex<br>products feel <em>simple.</em></h2>
+            <p class="about-description">I turn messy requirements into calm, useful experiences. I care about how things work just as much as how they feel — and I believe the best design starts by listening.</p>
+            <div class="about-links"><a href="#experience">Experience ↗</a><a href="#contact">Say hello ↗</a></div>
+          </div>
+          <div class="about-more">
+            <div class="mode-card">
+              <div class="mode-top"><span>✣ &nbsp; JOANA M. / MODE</span><!--<span>●●●</span>--></div>
+              <div class="mode-tabs" role="tablist" aria-label="Ways I work">
+                <button class="mode-tab is-on" type="button" role="tab" aria-selected="true" data-mode="Researcher">✣ &nbsp; Research</button>
+                <button class="mode-tab" type="button" role="tab" aria-selected="false" data-mode="Systems">✣ &nbsp; Systems</button>
+                <button class="mode-tab" type="button" role="tab" aria-selected="false" data-mode="Visual">✣ &nbsp; Visual</button>
+                <button class="mode-tab" type="button" role="tab" aria-selected="false" data-mode="Collaborator">✣ &nbsp; Collaborator</button>
+                <button class="mode-tab" type="button" role="tab" aria-selected="false" data-mode="Development">✣ &nbsp; Development</button>
+              </div>
+              <div class="mode-content"><p class="mode-description">I start with a real person, not a persona deck.</p><div class="mode-tags"><span>User interviews</span><span>Journey maps</span><span>Useful questions</span></div></div>
+            </div>
+            <div class="stats"><div><b>4+</b><span>years exploring</span></div><div><b>5</b><span>products shipped</span></div><div><b>∞</b><span>things to learn</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="frame experience-frame" id="experience" aria-label="Experience">
+        <span class="frame-label">▱ &nbsp; Experience</span>
+        <div class="frame-heading"><div><p class="label">THE PATH SO FAR</p><h2>Work diary<span class="brand-dot">.</span></h2></div><p class="frame-hint">A few chapters, and always<br>room for a new one.</p></div>
+        <div class="diary-wrap">
+          <div class="diary-tabs" role="tablist" aria-label="Experience chapters">
+            <button type="button" class="diary-tab is-on" data-page="0">Building products</button>
+            <button type="button" class="diary-tab" data-page="1">The beginning</button>
+            <button type="button" class="diary-tab" data-page="2">Internship</button>
+            <button type="button" class="diary-tab" data-page="3">Education</button>
+          </div>
+          <div class="diary" aria-live="polite">
+            <div class="diary-cover"><span>VOL. 01</span><div><strong>Work<br>Diary</strong><i></i><p>Joana M. · UI/UX Designer</p></div><small>2022 — 2026</small><b>↗</b></div>
+            <article class="diary-page">
+              <p class="label" id="diary-date">2024 — NOW</p>
+              <h3 id="diary-title">Software Development</h3>
+              <p class="diary-company" id="diary-company">Santander and Vizrt</p>
+              <p class="diary-what">A FEW THINGS I DID</p>
+              <ul id="diary-points"><li>Built and improved user-focused digital products, combining frontend and full-stack development with UX/UI design across B2B and financial applications.</li><li>Collaborated with cross-functional teams to translate business requirements into scalable, responsive, and production-ready solutions, from discovery to launch.</li></ul>
+              <span class="diary-page-no">01</span>
+            </article>
+          </div>
+          <div class="diary-controls"><span>TURN A PAGE TO EXPLORE</span><div><button type="button" class="diary-prev" aria-label="Previous experience" disabled>←</button><button type="button" class="diary-next" aria-label="Next experience">→</button></div></div>
+        </div>
+      </section>
+
+      <!-- TODO
+      <section class="frame youtube-frame" id="youtube" aria-label="Design experiments">
+        <span class="frame-label">▱ &nbsp; Design experiments</span>
+        <div class="youtube-layout">
+          <div class="youtube-copy">
+            <p class="label">SMALL EXPERIMENTS, BIG IMPACT</p>
+            <h2>UX, made<br><em>obvious.</em></h2>
+            <p>I like taking familiar screens and asking how a tiny change could make them work better.</p>
+            <a class="button button-brand" href="#contact">See what I'm exploring <span>↗</span></a>
+          </div>
+          <div class="demo">
+            <div class="demo-header"><span>BEFORE / AFTER</span><button type="button" class="demo-law">Hick's Law <span>⌄</span></button></div>
+            <p class="demo-caption">Too many choices? Let's make it simple.</p>
+            <div class="demo-window">
+              <div class="demo-pane demo-before"><span class="demo-url">app.com/pricing</span><small>CHOOSE A PLAN</small><b>Find the right<br>plan for you</b><div class="plan-list"><i>Starter <span>$9 / mo</span></i><i>Basic <span>$19 / mo</span></i><i>Basic+ <span>$29 / mo</span></i><i>Plus <span>$39 / mo</span></i><i>Pro <span>$49 / mo</span></i><i>Pro+ <span>$59 / mo</span></i><i>Team <span>$89 / mo</span></i><i>Business <span>$129 / mo</span></i></div></div>
+              <div class="demo-pane demo-after"><span class="demo-url">app.com/pricing</span><small>A PLAN THAT FITS</small><b>Less choosing.<br>More doing.</b><div class="plan-cards"><i><small>START HERE</small><b>Free</b><span>$0 <small>/ month</small></span><em>Get started →</em></i><i><small>FOR YOUR NEXT STEP</small><b>Pro</b><span>$19 <small>/ month</small></span><em>Try Pro →</em></i></div></div>
+              <input class="compare-slider" type="range" min="0" max="100" value="50" aria-label="Compare before and after design">
+              <span class="compare-handle" aria-hidden="true">↔</span>
+            </div>
+            <div class="demo-footer"><span>AFTER · 2 CLEAR CHOICES</span><span>DRAG TO COMPARE ↔</span><span>BEFORE · 8 PLANS</span></div>
+          </div>
+        </div>
+      </section>
+      -->
+
+      <section class="frame contact-frame" id="contact" aria-label="Contact">
+        <span class="frame-label">▱ &nbsp; Contact</span>
+        <div class="contact-content"><p class="label">HAVE A GOOD IDEA IN MIND?</p><h2>Let's make it<br><em>happen.</em></h2><p>Have a product, a dashboard or a role to fill? Send a little note — I’d love to hear what you’re working on.</p><a class="contact-email" href="mailto:designbyjoana@outlook.com">designbyjoana@outlook.com <span>↗</span></a></div>
+        <footer class="canvas-footer"><span>MADE WITH LOVE & LOTS OF COFFEE</span><a href="#hero">BACK TO TOP ↑</a><span>© <span id="current-year"></span> JOANA M.</span></footer>
+      </section>
+    </main>
+
+  </body>
+</html>

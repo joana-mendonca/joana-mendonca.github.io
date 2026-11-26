@@ -1,9 +1,0 @@
-{
-  "service": "Formspree integration for contact form",
-  "steps": [
-    "1. Replace the form's action with Formspree endpoint.",
-    "2. Remove mailto and use POST method.",
-    "3. Optionally, add a success message on submit."
-  ],
-  "docs": "https://formspree.io/"
-}
