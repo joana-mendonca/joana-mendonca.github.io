@@ -15,7 +15,7 @@
   <body>
     <header class="editor-bar">
       <div class="bar-left">
-        <a class="brand-mark" href="#hero" aria-label="Joana M, home">J</a>
+        <a class="brand-mark" href="#hero" aria-label="Joana M, home">J<span>.</span></a>
         <button class="icon-button panel-toggle" type="button" aria-label="Hide layers panel" title="Toggle layers panel" aria-pressed="false">
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/></svg>
         </button>
@@ -42,9 +42,9 @@
       <p class="panel-heading">Pages</p>
       <a class="page-item is-selected" href="#hero"><span class="page-check">✓</span>Portfolio</a>
       <a class="page-item" href="work/moey.html">Moey!</a>
+      <a class="page-item" href="work/mude.html">MUDE</a>
+      <a class="page-item" href="work/edit.html">EDIT.</a>
       <!-- TODO
-      <a class="page-item" href="work/fieldnote.html">Fieldnote</a>
-      <a class="page-item" href="work/northstar.html">Northstar</a>
       <a class="page-item" href="work/luma.html">Luma</a>
       <a class="page-item" href="work/common-ground.html">Common Ground</a>
       -->
@@ -53,9 +53,9 @@
         <a href="#hero" data-section="hero"><span class="layer-icon">⌂</span>Home</a>
         <a href="#work" data-section="work"><span class="layer-icon">▱</span>Work</a>
         <a class="sub-layer" href="#project-moey">Moey!</a>
+        <a class="sub-layer" href="#project-mude">MUDE</a>
+        <a class="sub-layer" href="#project-edit">EDIT.</a>
         <!-- TODO
-        <a class="sub-layer" href="#project-fieldnote">Fieldnote</a>
-        <a class="sub-layer" href="#project-northstar">Northstar</a>
         <a class="sub-layer" href="#project-luma">Luma</a>
         <a class="sub-layer" href="#project-common">Common Ground</a>
         -->
@@ -74,7 +74,7 @@
       <section class="frame hero-frame" id="hero" aria-label="Introduction">
         <span class="frame-label">▱ &nbsp; Home · 1440</span>
         <div class="hero-content">
-          <p class="hero-meta"><span>UX/UI Designer for digital products</span><span class="availability"><i></i>Open to opportunities · Remote/Hybrid, Portugal</span></p>
+          <p class="hero-meta"><span>Product Designer & Engineer</span><span class="availability"><i></i>Open to opportunities · Remote/Hybrid, Portugal</span></p>
           <h1 class="hero-name"><span>Joana</span> <span>M<span class="brand-dot">.</span></span></h1>
           <div class="hero-row">
             <div class="hero-copy">
@@ -88,37 +88,42 @@
       </section>
 
       <section class="frame work-frame" id="work" aria-label="Selected work">
-        <span class="frame-label">▱ &nbsp; Work · 5 case studies</span>
+        <span class="frame-label">▱ &nbsp; Work · 3 case studies</span>
         <div class="frame-heading"><div><p class="label">SELECTED PROJECTS</p><h2>Selected work<span class="brand-dot">.</span></h2></div><p class="frame-hint">A few ideas, made real.<br>Thoughtful design for everyday life.</p></div>
         <div class="project-stack">
           <a class="project-card project-moey" id="project-moey" href="work/moey.html" aria-label="View Moey! case study">
             <span class="project-label"><b>Digital banking</b><span>iOS · Mobile</span></span>
             <span class="project-art">
               <span class="project-copy"><small>01 / 05</small><strong>Moey!</strong><span>Banking made simpler · UX/UI</span></span>
-              <span class="phone-mock moey-phone"><img src="assets/moey-home.png" alt="Moey! banking app home screen showing the balance, shortcuts, recent activity and bottom navigation"></span>
+              <span class="phone-mock moey-phone"><img src="assets/moey-splash.png" alt="Moey! app splash screen with its logo on a teal-to-indigo gradient"></span>
+            </span>
+            <span class="card-open">OPEN CASE STUDY ↗</span>
+          </a>
+
+          <a class="project-card project-mude" id="project-mude" href="work/mude.html" aria-label="View MUDE case study">
+            <span class="project-label"><b>Museum Website</b><span>Web · Responsive</span></span>
+            <span class="project-art">
+              <span class="project-copy"><small>02 / 05</small><strong>MUDE</strong><span>Design & culture · Website redesign</span></span>
+              <span class="mude-computer">
+                <span class="mude-computer-screen"><img src="assets/mude-screen.jpg" alt="MUDE museum website displayed on a desktop computer"></span>
+                <span class="mude-computer-stand"></span>
+                <span class="mude-computer-foot"></span>
+                <span class="mude-computer-keyboard"></span>
+              </span>
+            </span>
+            <span class="card-open">OPEN CASE STUDY ↗</span>
+          </a>
+
+          <a class="project-card project-edit" id="project-edit" href="work/edit.html" aria-label="View edit dashboard case study">
+            <span class="project-label"><b>Mobile app</b><span>iOS · Mobile</span></span>
+            <span class="project-art">
+              <span class="project-copy"><small>03 / 05</small><strong>EDIT.</strong><span>Student management system · Mobile UI</span></span>
+              <span class="edit-phone"><img src="assets/edit-screens/intro.png" alt="EDIT app intro screen with the E highlighted in yellow"></span>
             </span>
             <span class="card-open">OPEN CASE STUDY ↗</span>
           </a>
 
           <!--
-          <a class="project-card project-fieldnote" id="project-fieldnote" href="work/fieldnote.html" aria-label="View Fieldnote store case study">
-            <span class="project-label"><b>E-commerce</b><span>Web · Responsive</span></span>
-            <span class="project-art">
-              <span class="project-copy"><small>02 / 05</small><strong>Fieldnote</strong><span>A slower kind of shopping</span></span>
-              <span class="browser-mock"><span class="browser-top"><i></i><i></i><i></i><b>fieldnote.studio</b></span><span class="shop-head"><b>fieldnote<span>®</span></b><small>SHOP&nbsp;&nbsp; OUR STORY&nbsp;&nbsp; JOURNAL</small></span><span class="shop-hero"><small>GROW AT YOUR OWN PACE</small><b>A little more<br>room to grow.</b><i>Find your new favourite green thing.</i><em>SHOP THE COLLECTION →</em></span><span class="shop-plant"><i></i><i></i><i></i><i></i><b></b></span><span class="shop-bottom">A GOOD HOME FOR GOOD PLANTS</span></span>
-            </span>
-            <span class="card-open">OPEN CASE STUDY ↗</span>
-          </a>
-
-          <a class="project-card project-northstar" id="project-northstar" href="work/northstar.html" aria-label="View Northstar dashboard case study">
-            <span class="project-label"><b>B2B SaaS</b><span>Desktop · 1440</span></span>
-            <span class="project-art">
-              <span class="project-copy"><small>03 / 05</small><strong>Northstar</strong><span>More clarity for growing teams</span></span>
-              <span class="dashboard-mock"><span class="dash-side"><b>northstar<span>✳</span></b><small>WORKSPACE</small><i>◫ &nbsp; Overview</i><i>▤ &nbsp; Projects</i><i>◷ &nbsp; Activity</i><small>YOUR TEAM</small><i>⚙ &nbsp; Settings</i></span><span class="dash-main"><span class="dash-top">Monday, September 16, 2026 <b>JD</b></span><b class="dash-title">Good morning, Joana <span>✳</span></b><small>Here's what's happening with your projects.</small><span class="dash-stats"><i><small>ACTIVE PROJECTS</small><b>12 <em>↗ 2 this week</em></b></i><i><small>TEAM CAPACITY</small><b>84% <em>On track</em></b></i><i><small>UPCOMING MILESTONE</small><b>Sep 24 <em>Website launch</em></b></i></span><span class="dash-chart"><b>Project activity</b><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></span>
-            </span>
-            <span class="card-open">OPEN CASE STUDY ↗</span>
-          </a>
-
           <a class="project-card project-luma" id="project-luma" href="work/luma.html" aria-label="View Luma learning app case study">
             <span class="project-label"><b>Education</b><span>Mobile · 390</span></span>
             <span class="project-art">
@@ -138,7 +143,7 @@
           </a>
          -->
         </div>
-        <p class="stack-note"><span>SCROLL TO MOVE THROUGH THE PROJECTS</span><span>01 — 05</span></p>
+        <p class="stack-note"><span>SCROLL TO MOVE THROUGH THE PROJECTS</span><span>01 — 03</span></p>
       </section>
 
       <section class="frame about-frame" id="about" aria-label="About Joana">

@@ -51,9 +51,17 @@ button { color: inherit; font: inherit; }
 .case-visual::after { width: 27vw; max-width: 320px; }
 .case-visual-caption { position: absolute; z-index: 1; bottom: 17px; left: 19px; font: 9px var(--mono); letter-spacing: .05em; }
 .case-visual-mark { position: absolute; top: 18px; right: 24px; color: var(--accent-mark, #fd5051); font: clamp(28px, 5vw, 55px) var(--display); }
+.case-visual .mude-computer { position: relative; z-index: 2; top: auto; right: auto; display: block; width: min(660px, 72%); margin-top: -12px; }
+.case-visual .mude-computer-screen { display: block; overflow: hidden; padding: 7px; border: 2px solid #393a3d; border-radius: 9px 9px 4px 4px; background: linear-gradient(135deg, #252629, #050506 45%, #414246); box-shadow: 0 16px 30px #302b2535; }
+.case-visual .mude-computer-screen img { display: block; width: 100%; height: auto; }
+.case-visual .mude-computer-stand { display: block; width: 25%; height: 24px; margin: -1px auto 0; border: 1px solid #b1b1b1; border-top: 0; background: linear-gradient(90deg, #999a9c, #e0e0df 35%, #c4c4c4 70%, #929396); }
+.case-visual .mude-computer-foot { display: block; width: 43%; height: 7px; margin: 0 auto; border: 1px solid #a6a6a6; border-radius: 50% 50% 3px 3px; background: linear-gradient(#efefed, #a5a6a7); box-shadow: 0 7px 12px #302b2525; }
+.case-visual .mude-computer-keyboard { display: block; width: 72%; height: 7px; margin: 10px 0 0 1%; border: 1px solid #b5b5b5; border-radius: 2px 2px 5px 5px; background: repeating-linear-gradient(90deg, #d0d0ce 0 5px, #f3f3f1 5px 7px); box-shadow: 0 5px 8px #302b2520; }
 .visual-device { position: relative; z-index: 2; display: flex; width: min(210px, 40vw); min-height: 340px; flex-direction: column; padding: 16px; border: 7px solid #252525; border-radius: 30px; color: #242424; background: #f8f7f1; box-shadow: 0 25px 60px #17171945; transform: rotate(-4deg); }
 .visual-device--splash { overflow: hidden; min-height: 0; aspect-ratio: 375 / 812; padding: 0; background: #24243f; }
 .visual-device--splash > img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.edit-hero-device { width: clamp(150px, 21vw, 220px); min-height: 0; aspect-ratio: 390 / 844; overflow: hidden; padding: 0; border: 0; border-radius: 35px; background: transparent; }
+.edit-hero-device > img { display: block; width: 100%; height: auto; border-radius: inherit; }
 .visual-device > small { font: 8px var(--mono); }
 .visual-device > b { margin-top: 24px; font: 400 26px/1.08 var(--display); }
 .visual-device > p { color: #777; font-size: 9px; }
@@ -122,8 +130,12 @@ button { color: inherit; font: inherit; }
 .moey-screen-story:nth-child(3) figure .moey-screen-zoom-trigger img, .moey-screen-story:nth-child(8) figure .moey-screen-zoom-trigger img { width: min(100%, 300px); margin: 0 auto; }
 .moey-statistics { margin: 24px 0 0; padding: 18px; border: 1px solid var(--line); border-radius: 9px; background: var(--panel); }
 .moey-statistics img { display: block; width: min(100%, 560px); height: auto; margin: 0 auto; }
+:root[data-theme="dark"] .moey-statistics img { filter: invert(1); }
 .moey-statistics figcaption { margin-top: 12px; color: var(--mute); text-align: center; font: 9px/1.5 var(--mono); letter-spacing: .04em; }
 .moey-wireframe-board { overflow: hidden; margin: 24px 0 0; border: 1px solid var(--line); border-radius: 10px; background: #eef1f6; }
+.mude-wireframe-board { overflow: hidden; margin: 24px 0 0; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+.mude-wireframe-board img { display: block; width: 100%; height: auto; }
+.mude-wireframe-board figcaption { padding: 10px 12px; color: var(--mute); background: var(--panel); text-align: center; font: 9px/1.5 var(--mono); letter-spacing: .04em; }
 .wireframe-zoom-trigger { position: relative; display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
 .wireframe-zoom-trigger img { display: block; width: 100%; height: auto; transition: filter .2s; }
 .wireframe-zoom-hint { position: absolute; right: 12px; bottom: 12px; padding: 7px 10px; border-radius: 4px; color: #fff; background: #171719cc; font: 9px var(--mono); opacity: 0; transition: opacity .2s; }
@@ -166,6 +178,11 @@ button { color: inherit; font: inherit; }
 .wireframe main i:nth-child(2) { width: 72%; }
 .wireframe main i:nth-child(3) { width: 55%; }
 .wireframe main i:nth-child(4) { width: 100%; height: 60px; margin-top: 8px; }
+.edit-screen-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 24px; scroll-margin-top: 90px; }
+.edit-screen-grid figure { overflow: hidden; margin: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); }
+.edit-screen-grid img { display: block; width: 100%; height: auto; border-radius: 7px; }
+.edit-screen-grid figure:first-child img { background: #131415; }
+.edit-screen-grid figcaption { padding: 8px 6px; color: var(--mute); text-align: center; font: 9px/1.4 var(--mono); }
 .screen { display: flex; min-height: 150px; flex-direction: column; justify-content: space-between; border: 1px solid var(--line); border-radius: 8px; background: var(--page); }
 .screen i { display: block; height: 40px; margin: 0 -7px; border-radius: 5px; background: color-mix(in srgb, var(--brand) 25%, var(--panel)); }
 .case-next { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin: 42px 0 24px; padding: 24px; color: #fff; background: #19191b; }
@@ -188,7 +205,9 @@ button { color: inherit; font: inherit; }
   .case-facts > div:nth-child(3) { padding-left: 0; border-left: 0; }
   .case-facts > div:nth-child(n+3) { border-top: 1px solid var(--line); }
   .case-visual { min-height: 340px; }
+  .case-visual .mude-computer { width: 76%; margin-top: -8px; }
   .visual-device { width: 178px; min-height: 300px; }
+  .edit-hero-device { width: 150px; }
   .visual-browser { min-height: 250px; padding: 22px; }
   .visual-dashboard { min-height: 245px; grid-template-columns: 95px 1fr; }
   .visual-dashboard aside { padding: 15px 9px; font-size: 9px; }
@@ -209,6 +228,7 @@ button { color: inherit; font: inherit; }
   .campaign-theme-grid { grid-template-columns: 1fr; }
   .campaign-theme { min-height: 0; }
   .persona-row, .principle-row, .screen-row { grid-template-columns: 1fr; }
+  .edit-screen-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .persona, .principle, .screen { min-height: auto; }
   .flow { flex-direction: column; }
   .flow-arrow { transform: rotate(90deg); text-align: center; }
